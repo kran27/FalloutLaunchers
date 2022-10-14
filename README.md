@@ -5,8 +5,7 @@
 - Fallout 1, 2, and Tactics launchers have been decompiled and are fully buildable from source.
 - Fallout Van Buren lacks an official launcher, and has [this launcher](https://github.com/kran27/VanBurenLauncher)
 ## Modern Games
-- Fallout 3 and New Vegas launchers can be modified if you use the GOG release
-- Fallout 4 launcher requires research and modification
+- Fallout 3, New Vegas and 4 can be lightly modified
 - Fallout 76 Lacks an official launcher. [This](https://github.com/kran27/Fallout76Launcher) exists, but does basically nothing.
 ## Other Games
 - There are no plans to support Fallout: Brotherhood of Steel in any way

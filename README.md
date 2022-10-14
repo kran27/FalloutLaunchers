@@ -9,6 +9,6 @@
 - Fallout New Vegas' steam launcher cannot be modified, the GOG one can.
 - Fallout 76 Lacks an official launcher. [This](https://github.com/kran27/Fallout76Launcher) exists, but does basically nothing.
 ## Other Games
-- There are no plans to support Fallout: Brotherhood of Steel in any way
+- There are no plans to support Fallout: Brotherhood of Steel, Shelter, or Shelter Online.
 - The flash games are playable at [this website](https://fallout_archive.keybase.pub/), may get a launcher for the group.
 - The [25th Anniversary quiz](https://fallout25.com/) has not been extracted from the base site.

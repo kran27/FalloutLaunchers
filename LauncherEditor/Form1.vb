@@ -57,8 +57,6 @@ Public Class Form1
         IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
         rh.Start()
         rh.WaitForExit()
-        IO.File.Delete($"{dir}\ResourceHacker.ini")
-        IO.File.Delete($"{dir}\ResourceHacker.log")
         IO.File.Delete($"{dir}\scr.txt")
         If Not silent Then MsgBox("Images Extracted")
         If openFolder Then Process.Start("explorer", dir)
@@ -89,10 +87,8 @@ Public Class Form1
             If Not IO.File.Exists(FilePath & ".bak") Then IO.File.Copy(FilePath, FilePath & ".bak")
             rh.Start()
             rh.WaitForExit()
-            IO.File.Delete($"{dir}\ResourceHacker.ini")
-            IO.File.Delete($"{dir}\ResourceHacker.log")
             IO.File.Delete($"{dir}\scr.txt")
-            MsgBox("File Patched")
+            If MsgBox("File Patched, start launcher?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then Process.Start(FilePath)
         Else
             MsgBox("No images to load")
         End If

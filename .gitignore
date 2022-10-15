@@ -11,3 +11,6 @@ LauncherEditor/.vs
 LauncherEditor/bin
 LauncherEditor/obj
 *.user
+LauncherEditor/ResourceHacker.exe
+LauncherEditor/ResourceHacker.ini
+LauncherEditor/ResourceHacker.log

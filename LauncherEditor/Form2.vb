@@ -205,7 +205,6 @@ Loaded:
                     g2.FillPath(New SolidBrush(ec), p)
                 End Using
                 blur = ApplyBlur(blur, 10, 10, ec, True)
-                blur.Save("test.png")
                 g.DrawImage(blur, 0, 0, blank.Width, blank.Height)
         End Select
         g.FillPath(New SolidBrush(c), p)

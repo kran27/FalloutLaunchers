@@ -147,17 +147,13 @@
 -extract Play.bmp, BITMAP,105
 -extract PlayLit.bmp, BITMAP,114
 -extract Options.bmp, BITMAP,120
--extract OptionsDark.bmp, BITMAP,208
 -extract OptionsLit.bmp, BITMAP,119
 -extract DataFiles.bmp, BITMAP,117
--extract DataFilesDark.bmp, BITMAP,207
 -extract DataFilesLit.bmp, BITMAP,118
--extract TechSupport.bmp, BITMAP,121
--extract TechSupportLit.bmp, BITMAP,122
+-extract Support.bmp, BITMAP,121
+-extract SupportLit.bmp, BITMAP,122
 -extract Exit.bmp, BITMAP,107
--extract ExitLit.bmp, BITMAP,116
--extract Install.bmp, BITMAP,210
--extract InstallLit.bmp, BITMAP,209</value>
+-extract ExitLit.bmp, BITMAP,116</value>
   </data>
   <data name="FReplace" xml:space="preserve">
     <value>[COMMANDS]
@@ -165,16 +161,12 @@
 -addoverwrite Play.bmp, BITMAP,105
 -addoverwrite PlayLit.bmp, BITMAP,114
 -addoverwrite Options.bmp, BITMAP,120
--addoverwrite OptionsDark.bmp, BITMAP,208
 -addoverwrite OptionsLit.bmp, BITMAP,119
 -addoverwrite DataFiles.bmp, BITMAP,117
--addoverwrite DataFilesDark.bmp, BITMAP,207
 -addoverwrite DataFilesLit.bmp, BITMAP,118
--addoverwrite TechSupport.bmp, BITMAP,121
--addoverwrite TechSupportLit.bmp, BITMAP,122
+-addoverwrite Support.bmp, BITMAP,121
+-addoverwrite SupportLit.bmp, BITMAP,122
 -addoverwrite Exit.bmp, BITMAP,107
--addoverwrite ExitLit.bmp, BITMAP,116
--addoverwrite Install.bmp, BITMAP,210
--addoverwrite InstallLit.bmp, BITMAP,209</value>
+-addoverwrite ExitLit.bmp, BITMAP,116</value>
   </data>
 </root>

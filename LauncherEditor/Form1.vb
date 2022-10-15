@@ -1,9 +1,11 @@
 ﻿Imports System.Drawing.Imaging
 Imports System.IO
+Imports System.Security.Policy
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar
 
 Public Class Form1
     Private FilePath As String
+    Public dir As String
     Private Sub SelectLauncherC(sender As Object, e As EventArgs) Handles SelectLauncher.Click
         Dim ofd As New OpenFileDialog With {
             .Filter = "Fallout 3/NV/4 Launcher|*.exe",
@@ -25,30 +27,29 @@ Public Class Form1
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         ComboBox1.Enabled = False
+        dir = $"{Application.StartupPath}{ComboBox1.SelectedItem.Replace(":", "")}"
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not IO.File.Exists("ResourceHacker.exe") Then
             If MsgBox("Resource Hacker not found, would you like to open the download page?", MsgBoxStyle.YesNo, "Dependency Missing") = DialogResult.Yes Then
                 MsgBox("Download the ZIP version and extract the .exe to this folder")
-                Process.Start("http://www.angusj.com/resourcehacker/#download")
-                Process.Start(Application.StartupPath)
+                Process.Start("explorer", "http://www.angusj.com/resourcehacker/#download")
+                Process.Start("explorer", Application.StartupPath)
             Else
                 Application.Exit()
             End If
         End If
     End Sub
 
-    Private Sub Button1_Click() Handles Button1.Click
-        Dim dir = $"{Application.StartupPath}\{ComboBox1.SelectedItem.Replace(":", "")}"
+    Private Sub ExtractImages(silent As Boolean, openFolder As Boolean)
         IO.Directory.CreateDirectory(dir)
-        IO.File.Move("ResourceHacker.exe", dir & "\ResourceHacker.exe")
-        Dim rh As New Process With {.StartInfo = New ProcessStartInfo With {.FileName = $"ResourceHacker.exe", .Arguments = "-script scr.txt", .WorkingDirectory = dir}}
+        Dim rh As New Process With {.StartInfo = New ProcessStartInfo With {.FileName = "ResourceHacker.exe", .Arguments = "-script scr.txt", .WorkingDirectory = dir}}
         Dim scrb As New Text.StringBuilder
         scrb.Append("[FILENAMES]")
-        scrb.Append(vbNewLine)
+        scrb.Append(vbCrLf)
         scrb.Append($"Open=""{FilePath}""")
-        scrb.Append(vbNewLine)
+        scrb.Append(vbCrLf)
         Select Case ComboBox1.SelectedIndex
             Case 0, 1 : scrb.Append(My.Resources.FExtract)
             Case 2 : scrb.Append(My.Resources.F4Extract)
@@ -56,48 +57,48 @@ Public Class Form1
         IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
         rh.Start()
         rh.WaitForExit()
-        IO.File.Move(dir & "\ResourceHacker.exe", "ResourceHacker.exe")
         IO.File.Delete($"{dir}\ResourceHacker.ini")
         IO.File.Delete($"{dir}\ResourceHacker.log")
         IO.File.Delete($"{dir}\scr.txt")
-        MsgBox("Images Extracted")
-        Process.Start(dir)
+        If Not silent Then MsgBox("Images Extracted")
+        If openFolder Then Process.Start("explorer", dir)
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim dir = $"{Application.StartupPath}\{ComboBox1.SelectedItem.Replace(":", "")}"
-        For Each file As String In IO.Directory.GetFiles(dir)
-            Dim f As New IO.FileInfo(file)
-            If f.Extension = ".bmp" Then
-                Dim bmp = LoadBmp(file)
-                bmp.Save(file, ImageFormat.Bmp)
-            End If
-        Next
-        IO.File.Move("ResourceHacker.exe", dir & "\ResourceHacker.exe")
-        Dim rh As New Process With {.StartInfo = New ProcessStartInfo With {.FileName = $"ResourceHacker.exe", .Arguments = "-script scr.txt", .WorkingDirectory = dir}}
-        Dim scrb As New Text.StringBuilder
-        scrb.Append("[FILENAMES]")
-        scrb.Append(vbNewLine)
-        scrb.Append($"Open=""{FilePath}""")
-        scrb.Append(vbNewLine)
-        scrb.Append($"Save=""{FilePath}""")
-        scrb.Append(vbNewLine)
-        Select Case ComboBox1.SelectedIndex
-            Case 0, 1 : scrb.Append(My.Resources.FReplace)
-            Case 2 : scrb.Append(My.Resources.F4Replace)
-        End Select
-        IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
-        If Not IO.File.Exists(FilePath & ".bak") Then IO.File.Copy(FilePath, FilePath & ".bak")
-        rh.Start()
-        rh.WaitForExit()
-        IO.File.Move(dir & "\ResourceHacker.exe", "ResourceHacker.exe")
-        IO.File.Delete($"{dir}\ResourceHacker.ini")
-        IO.File.Delete($"{dir}\ResourceHacker.log")
-        IO.File.Delete($"{dir}\scr.txt")
-        MsgBox("File Patched")
+    Public Sub ApplyChanges() Handles Button2.Click
+        If IO.Directory.Exists(dir) Then
+            For Each file As String In IO.Directory.GetFiles(dir)
+                Dim f As New IO.FileInfo(file)
+                If f.Extension = ".bmp" Then
+                    Dim bmp = LoadBmp(file)
+                    bmp.Save(file, ImageFormat.Bmp)
+                End If
+            Next
+            Dim rh As New Process With {.StartInfo = New ProcessStartInfo With {.FileName = $"ResourceHacker.exe", .Arguments = "-script scr.txt", .WorkingDirectory = dir}}
+            Dim scrb As New Text.StringBuilder
+            scrb.Append("[FILENAMES]")
+            scrb.Append(vbCrLf)
+            scrb.Append($"Open=""{FilePath}""")
+            scrb.Append(vbCrLf)
+            scrb.Append($"Save=""{FilePath}""")
+            scrb.Append(vbCrLf)
+            Select Case ComboBox1.SelectedIndex
+                Case 0, 1 : scrb.Append(My.Resources.FReplace)
+                Case 2 : scrb.Append(My.Resources.F4Replace)
+            End Select
+            IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
+            If Not IO.File.Exists(FilePath & ".bak") Then IO.File.Copy(FilePath, FilePath & ".bak")
+            rh.Start()
+            rh.WaitForExit()
+            IO.File.Delete($"{dir}\ResourceHacker.ini")
+            IO.File.Delete($"{dir}\ResourceHacker.log")
+            IO.File.Delete($"{dir}\scr.txt")
+            MsgBox("File Patched")
+        Else
+            MsgBox("No images to load")
+        End If
     End Sub
 
-    Private Function LoadBmp(file As String) As Bitmap
+    Public Shared Function LoadBmp(file As String) As Bitmap
         Dim tmp = New Bitmap(file)
         Dim bmp As New Bitmap(tmp.Width, tmp.Height, PixelFormat.Format24bppRgb)
         Dim g = Graphics.FromImage(bmp)
@@ -110,10 +111,21 @@ Public Class Form1
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         FilePath &= ".bak"
         If IO.File.Exists(FilePath) Then
-            Button1_Click()
+            ExtractImages(False, True)
         Else
             MsgBox("Backup .exe not found")
         End If
         FilePath = FilePath.Substring(0, FilePath.LastIndexOf("."))
+    End Sub
+
+    Private Sub Button4_Click() Handles Button4.Click
+        If Not IO.Directory.Exists(dir) Then ExtractImages(True, False)
+        Using f As New Form2 With {.game = ComboBox1.SelectedIndex}
+            f.ShowDialog()
+        End Using
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ExtractImages(False, True)
     End Sub
 End Class

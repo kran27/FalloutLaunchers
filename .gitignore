@@ -1,4 +1,3 @@
-
 Fallout2Launcher/.vs
 Fallout2Launcher/bin
 Fallout2Launcher/obj
@@ -8,3 +7,7 @@ FalloutLauncher/obj
 TacticsLauncher/.vs
 TacticsLauncher/bin
 TacticsLauncher/obj
+LauncherEditor/.vs
+LauncherEditor/bin
+LauncherEditor/obj
+*.user

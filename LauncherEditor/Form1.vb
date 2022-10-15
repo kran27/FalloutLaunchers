@@ -39,7 +39,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click() Handles Button1.Click
         Dim dir = $"{Application.StartupPath}\{ComboBox1.SelectedItem.Replace(":", "")}"
         IO.Directory.CreateDirectory(dir)
         IO.File.Move("ResourceHacker.exe", dir & "\ResourceHacker.exe")
@@ -106,4 +106,14 @@ Public Class Form1
         tmp.Dispose()
         Return bmp
     End Function
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        FilePath &= ".bak"
+        If IO.File.Exists(FilePath) Then
+            Button1_Click()
+        Else
+            MsgBox("Backup .exe not found")
+        End If
+        FilePath = FilePath.Substring(0, FilePath.LastIndexOf("."))
+    End Sub
 End Class

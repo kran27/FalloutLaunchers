@@ -2,11 +2,10 @@
 ### Tools, files, and code relating to launchers of the Fallout Games.
 
 ## Classic Games
-- Fallout 1, 2, and Tactics launchers have been decompiled and are fully buildable from source.
+- Fallout [1](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutLauncher), [2](https://github.com/kran27/FalloutLaunchers/tree/main/Fallout2Launcher), and [Tactics](https://github.com/kran27/FalloutLaunchers/tree/main/TacticsLauncher) launchers have been decompiled and are fully buildable from source.
 - Fallout Van Buren lacks an official launcher, and has [this launcher](https://github.com/kran27/VanBurenLauncher)
 ## Modern Games
-- Fallout 3 and 4 can be modified
-- Fallout New Vegas' steam launcher cannot be modified, the GOG one can.
+- Fallout 3, New Vegas [(GOG Version)](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutNVLauncher) 4 [can be modified](https://github.com/kran27/FalloutLaunchers/tree/main/LauncherEditor)
 - Fallout 76 Lacks an official launcher. [This](https://github.com/kran27/Fallout76Launcher) exists, but does basically nothing.
 ## Other Games
 - There are no plans to support Fallout: Brotherhood of Steel, Shelter, or Shelter Online.

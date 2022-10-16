@@ -4,7 +4,7 @@ Imports ImageTools.Tools
 Imports LauncherEditor.Form1
 Public Class Form2
     Private l As Boolean
-    Public sizes As Integer() = {11, 4, 29}
+    Public sizes As Integer() = {11, 4, 29, 55, 29}
     Public game As Integer
     Private PFont As Font() = {DefaultFont, DefaultFont}
     Private OFont As Font() = {DefaultFont, DefaultFont}
@@ -78,7 +78,7 @@ Public Class Form2
                 Close.Size = New Size(221, 45)
                 Close.Location = New Point(552 + Background.Location.X, 275 + Background.Location.Y)
                 Close.Image = LoadBmp(Form1.dir & "\Exit.bmp")
-            Case 2
+            Case 2, 4
                 Background.Size = New Size(835, 400)
                 Background.Location = New Size(GroupBox1.Width / 2 - Background.Width / 2, GroupBox1.Height / 2 - Background.Height / 2)
                 DarkGroupBox4.Enabled = False
@@ -95,6 +95,25 @@ Public Class Form2
                 Support.Image = LoadBmp(Form1.dir & "\Support.bmp")
                 Close.Size = New Size(275, 50)
                 Close.Location = New Point(560 + Background.Location.X, 175 + Background.Location.Y)
+                Close.Image = LoadBmp(Form1.dir & "\Exit.bmp")
+            Case 3
+                Background.Size = New Size(794, 390)
+                Background.Location = New Size(GroupBox1.Width / 2 - Background.Width / 2, GroupBox1.Height / 2 - Background.Height / 2)
+                Background.Image = LoadBmp(Form1.dir & "\Background.bmp")
+                Play.Size = New Size(222, 40)
+                Play.Location = New Point(556 + Background.Location.X, 116 + Background.Location.Y)
+                Play.Image = LoadBmp(Form1.dir & "\Play.bmp")
+                Options.Size = New Size(222, 40)
+                Options.Location = New Point(556 + Background.Location.X, 156 + Background.Location.Y)
+                Options.Image = LoadBmp(Form1.dir & "\Options.bmp")
+                DataFiles.Size = New Size(222, 40)
+                DataFiles.Location = New Point(556 + Background.Location.X, 196 + Background.Location.Y)
+                DataFiles.Image = LoadBmp(Form1.dir & "\DataFiles.bmp")
+                Support.Size = New Size(222, 40)
+                Support.Location = New Point(556 + Background.Location.X, 236 + Background.Location.Y)
+                Support.Image = LoadBmp(Form1.dir & "\Support.bmp")
+                Close.Size = New Size(222, 40)
+                Close.Location = New Point(556 + Background.Location.X, 276 + Background.Location.Y)
                 Close.Image = LoadBmp(Form1.dir & "\Exit.bmp")
         End Select
     End Sub

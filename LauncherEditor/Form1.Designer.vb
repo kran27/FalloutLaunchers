@@ -53,7 +53,7 @@ Partial Class Form1
         Me.ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
         Me.ComboBox1.Enabled = False
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Fallout 3", "Fallout: New Vegas", "Fallout 4"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Fallout 3", "Fallout: New Vegas", "Fallout 4", "Skyrim", "Skyrim SE"})
         Me.ComboBox1.Location = New System.Drawing.Point(85, 47)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.ComboBox1.Name = "ComboBox1"

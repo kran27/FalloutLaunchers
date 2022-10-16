@@ -8,7 +8,7 @@ Public Class Form1
     Public dir As String
     Private Sub SelectLauncherC(sender As Object, e As EventArgs) Handles SelectLauncher.Click
         Dim ofd As New OpenFileDialog With {
-            .Filter = "Fallout 3/NV/4 Launcher|*.exe",
+            .Filter = "Bethesda Launcher|*.exe",
             .Multiselect = False
         }
         If ofd.ShowDialog() = DialogResult.OK Then
@@ -18,6 +18,8 @@ Public Class Form1
                 Case "FalloutLauncher.exe", "FalloutLauncherSteam.exe" : ComboBox1.SelectedIndex = 0
                 Case "FalloutNVLauncher.exe" : ComboBox1.SelectedIndex = 1
                 Case "Fallout4Launcher.exe" : ComboBox1.SelectedIndex = 2
+                Case "SkyrimLauncher.exe" : ComboBox1.SelectedIndex = 3
+                Case "SkyrimSELauncher.exe" : ComboBox1.SelectedIndex = 4
                 Case Else : MsgBox("Couldn't identify launcher, please select manually")
                     ComboBox1.Enabled = True
             End Select
@@ -51,8 +53,8 @@ Public Class Form1
         scrb.Append($"Open=""{FilePath}""")
         scrb.Append(vbCrLf)
         Select Case ComboBox1.SelectedIndex
-            Case 0, 1 : scrb.Append(My.Resources.FExtract)
-            Case 2 : scrb.Append(My.Resources.F4Extract)
+            Case 0, 1, 3 : scrb.Append(My.Resources.FExtract)
+            Case 2, 4 : scrb.Append(My.Resources.F4Extract)
         End Select
         IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
         rh.Start()
@@ -80,8 +82,8 @@ Public Class Form1
             scrb.Append($"Save=""{FilePath}""")
             scrb.Append(vbCrLf)
             Select Case ComboBox1.SelectedIndex
-                Case 0, 1 : scrb.Append(My.Resources.FReplace)
-                Case 2 : scrb.Append(My.Resources.F4Replace)
+                Case 0, 1, 3 : scrb.Append(My.Resources.FReplace)
+                Case 2, 4 : scrb.Append(My.Resources.F4Replace)
             End Select
             IO.File.WriteAllText($"{dir}\scr.txt", scrb.ToString)
             If Not IO.File.Exists(FilePath & ".bak") Then IO.File.Copy(FilePath, FilePath & ".bak")

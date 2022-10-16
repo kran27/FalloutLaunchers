@@ -2,7 +2,8 @@
 ### Tools, files, and code relating to launchers of the Fallout Games.
 
 ## Classic Games
-- Fallout [1](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutLauncher), [2](https://github.com/kran27/FalloutLaunchers/tree/main/Fallout2Launcher), and [Tactics](https://github.com/kran27/FalloutLaunchers/tree/main/TacticsLauncher) launchers have been decompiled and are fully buildable from source.
+- Fallout [1](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutLauncher), [2](https://github.com/kran27/FalloutLaunchers/tree/main/Fallout2Launcher), and [Tactics](https://github.com/kran27/FalloutLaunchers/tree/main/TacticsLauncher) launchers have been ~~decompiled~~ re-made from scratch
+- Remakes are functionally identical, but visually improved, with minor new functions
 - Fallout Van Buren lacks an official launcher, and has [this launcher](https://github.com/kran27/VanBurenLauncher)
 ## Modern Games
 - Fallout 3, New Vegas [(GOG Version)](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutNVLauncher), and 4 [can be modified](https://github.com/kran27/FalloutLaunchers/tree/main/LauncherEditor)

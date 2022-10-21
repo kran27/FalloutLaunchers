@@ -15,7 +15,7 @@ Public Class Form1
             FilePath = ofd.FileName
             Dim filename = ofd.FileName.Split("\").Last
             Select Case filename
-                Case "FalloutLauncher.exe", "FalloutLauncherSteam.exe" : ComboBox1.SelectedIndex = 0
+                Case "FalloutLauncher.exe", "FalloutLauncherSteam.exe", "FalloutLauncherEpic.exe" : ComboBox1.SelectedIndex = 0
                 Case "FalloutNVLauncher.exe" : ComboBox1.SelectedIndex = 1
                 Case "Fallout4Launcher.exe" : ComboBox1.SelectedIndex = 2
                 Case "SkyrimLauncher.exe" : ComboBox1.SelectedIndex = 3

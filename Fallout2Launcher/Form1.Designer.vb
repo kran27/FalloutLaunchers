@@ -35,33 +35,37 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(16, 14)
+        Me.PictureBox2.Image = Global.Fallout2Launcher.My.Resources.Resources.Play
+        Me.PictureBox2.Location = New System.Drawing.Point(16, 15)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(192, 34)
+        Me.PictureBox2.Size = New System.Drawing.Size(191, 35)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
+        Me.PictureBox3.Image = Global.Fallout2Launcher.My.Resources.Resources.ReadMe
         Me.PictureBox3.Location = New System.Drawing.Point(16, 55)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(192, 34)
+        Me.PictureBox3.Size = New System.Drawing.Size(191, 36)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(16, 97)
+        Me.PictureBox4.Image = Global.Fallout2Launcher.My.Resources.Resources.TS
+        Me.PictureBox4.Location = New System.Drawing.Point(16, 96)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(192, 34)
+        Me.PictureBox4.Size = New System.Drawing.Size(191, 36)
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
         '
         'PictureBox5
         '
+        Me.PictureBox5.Image = Global.Fallout2Launcher.My.Resources.Resources._Exit
         Me.PictureBox5.Location = New System.Drawing.Point(16, 138)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(192, 34)
+        Me.PictureBox5.Size = New System.Drawing.Size(191, 36)
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
         '

@@ -121,62 +121,11 @@
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Copyright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copyright.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_DE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_DE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_DE_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_DE_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_ES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_ES_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_ES_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_FR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_FR_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_FR_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_IT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_IT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_IT_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_IT_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Exit_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_DE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_DE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_DE_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_DE_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_ES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_ES_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_ES_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_FR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_FR_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_FR_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_IT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_IT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Play_IT_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Play_IT_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Play_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Play_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,59 +133,11 @@
   <data name="ReadMe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ReadMe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ReadMe_DE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_DE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_DE_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_DE_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_ES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_ES_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_ES_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_FR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_FR_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_FR_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_IT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_IT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ReadMe_IT_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReadMe_IT_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ReadMe_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ReadMe_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_DE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_DE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_DE_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_DE_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_ES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_ES_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_ES_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_FR" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_FR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_FR_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_FR_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_IT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_IT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TS_IT_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TS_IT_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TS_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TS_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

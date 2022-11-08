@@ -35,33 +35,37 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(399, 23)
+        Me.PictureBox2.Image = Global.TacticsLauncher.My.Resources.Resources.Play
+        Me.PictureBox2.Location = New System.Drawing.Point(392, 40)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(217, 35)
+        Me.PictureBox2.Size = New System.Drawing.Size(240, 40)
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(399, 65)
+        Me.PictureBox3.Image = Global.TacticsLauncher.My.Resources.Resources.ReadMe
+        Me.PictureBox3.Location = New System.Drawing.Point(392, 86)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(217, 35)
+        Me.PictureBox3.Size = New System.Drawing.Size(240, 40)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
         'PictureBox4
         '
-        Me.PictureBox4.Location = New System.Drawing.Point(399, 108)
+        Me.PictureBox4.Image = Global.TacticsLauncher.My.Resources.Resources.TS
+        Me.PictureBox4.Location = New System.Drawing.Point(392, 132)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(217, 35)
+        Me.PictureBox4.Size = New System.Drawing.Size(240, 40)
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
         '
         'PictureBox5
         '
-        Me.PictureBox5.Location = New System.Drawing.Point(399, 149)
+        Me.PictureBox5.Image = Global.TacticsLauncher.My.Resources.Resources._Exit
+        Me.PictureBox5.Location = New System.Drawing.Point(392, 178)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(217, 35)
+        Me.PictureBox5.Size = New System.Drawing.Size(240, 40)
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
         '

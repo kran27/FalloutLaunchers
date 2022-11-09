@@ -29,20 +29,24 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>LauncherEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>False</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <DocumentationFile>LauncherEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>False</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DefineDebug>false</DefineDebug>
     <DocumentationFile>LauncherEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>True</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <DefineDebug>false</DefineDebug>
     <DocumentationFile>LauncherEditor.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>True</Optimize>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>6148A5621CE5D326CB5917AF453FB7BF628EF757</ManifestCertificateThumbprint>
@@ -52,9 +56,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Import Include="System.Drawing" />
@@ -94,7 +95,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AltUI\AltUI\AltUI.csproj" />
-    <ProjectReference Include="D:\Documents\GitHub\ImageTools\ImageTools.csproj" />
+    <ProjectReference Include="..\..\..\..\Documents\GitHub\DarkUI\AltUI\AltUI.csproj" />
+    <ProjectReference Include="..\..\ImageTools\ImageTools\ImageTools.csproj" />
   </ItemGroup>
 </Project>

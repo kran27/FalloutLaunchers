@@ -183,7 +183,7 @@ Partial Class Form2
         '
         Me.DarkButton16.FlatBottom = False
         Me.DarkButton16.FlatTop = False
-        Me.DarkButton16.HoldColour = False
+        Me.DarkButton16.CustomColour = False
         Me.DarkButton16.Location = New System.Drawing.Point(583, 22)
         Me.DarkButton16.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton16.Name = "DarkButton16"
@@ -197,7 +197,7 @@ Partial Class Form2
         '
         Me.DarkButton15.FlatBottom = False
         Me.DarkButton15.FlatTop = False
-        Me.DarkButton15.HoldColour = False
+        Me.DarkButton15.CustomColour = False
         Me.DarkButton15.Location = New System.Drawing.Point(485, 22)
         Me.DarkButton15.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton15.Name = "DarkButton15"
@@ -222,7 +222,7 @@ Partial Class Form2
         '
         Me.DarkButton14.FlatBottom = False
         Me.DarkButton14.FlatTop = False
-        Me.DarkButton14.HoldColour = False
+        Me.DarkButton14.CustomColour = False
         Me.DarkButton14.Location = New System.Drawing.Point(740, 23)
         Me.DarkButton14.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton14.Name = "DarkButton14"
@@ -236,7 +236,7 @@ Partial Class Form2
         '
         Me.DarkButton13.FlatBottom = False
         Me.DarkButton13.FlatTop = False
-        Me.DarkButton13.HoldColour = False
+        Me.DarkButton13.CustomColour = False
         Me.DarkButton13.Location = New System.Drawing.Point(921, 22)
         Me.DarkButton13.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton13.Name = "DarkButton13"
@@ -249,7 +249,7 @@ Partial Class Form2
         '
         Me.Button1.FlatBottom = False
         Me.Button1.FlatTop = False
-        Me.Button1.HoldColour = False
+        Me.Button1.CustomColour = False
         Me.Button1.Location = New System.Drawing.Point(8, 22)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"
@@ -262,7 +262,7 @@ Partial Class Form2
         '
         Me.DarkButton12.FlatBottom = False
         Me.DarkButton12.FlatTop = False
-        Me.DarkButton12.HoldColour = False
+        Me.DarkButton12.CustomColour = False
         Me.DarkButton12.Location = New System.Drawing.Point(380, 22)
         Me.DarkButton12.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton12.Name = "DarkButton12"
@@ -276,7 +276,7 @@ Partial Class Form2
         '
         Me.DarkButton6.FlatBottom = False
         Me.DarkButton6.FlatTop = False
-        Me.DarkButton6.HoldColour = False
+        Me.DarkButton6.CustomColour = False
         Me.DarkButton6.Location = New System.Drawing.Point(282, 22)
         Me.DarkButton6.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton6.Name = "DarkButton6"
@@ -323,7 +323,7 @@ Partial Class Form2
         '
         Me.DarkButton21.FlatBottom = False
         Me.DarkButton21.FlatTop = False
-        Me.DarkButton21.HoldColour = False
+        Me.DarkButton21.CustomColour = False
         Me.DarkButton21.Location = New System.Drawing.Point(108, 22)
         Me.DarkButton21.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton21.Name = "DarkButton21"
@@ -346,7 +346,7 @@ Partial Class Form2
         '
         Me.DarkButton11.FlatBottom = False
         Me.DarkButton11.FlatTop = False
-        Me.DarkButton11.HoldColour = False
+        Me.DarkButton11.CustomColour = False
         Me.DarkButton11.Location = New System.Drawing.Point(52, 22)
         Me.DarkButton11.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton11.Name = "DarkButton11"
@@ -370,7 +370,7 @@ Partial Class Form2
         '
         Me.DarkButton5.FlatBottom = False
         Me.DarkButton5.FlatTop = False
-        Me.DarkButton5.HoldColour = False
+        Me.DarkButton5.CustomColour = False
         Me.DarkButton5.Location = New System.Drawing.Point(8, 22)
         Me.DarkButton5.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton5.Name = "DarkButton5"
@@ -399,7 +399,7 @@ Partial Class Form2
         '
         Me.DarkButton20.FlatBottom = False
         Me.DarkButton20.FlatTop = False
-        Me.DarkButton20.HoldColour = False
+        Me.DarkButton20.CustomColour = False
         Me.DarkButton20.Location = New System.Drawing.Point(108, 22)
         Me.DarkButton20.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton20.Name = "DarkButton20"
@@ -422,7 +422,7 @@ Partial Class Form2
         '
         Me.DarkButton10.FlatBottom = False
         Me.DarkButton10.FlatTop = False
-        Me.DarkButton10.HoldColour = False
+        Me.DarkButton10.CustomColour = False
         Me.DarkButton10.Location = New System.Drawing.Point(52, 22)
         Me.DarkButton10.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton10.Name = "DarkButton10"
@@ -446,7 +446,7 @@ Partial Class Form2
         '
         Me.DarkButton4.FlatBottom = False
         Me.DarkButton4.FlatTop = False
-        Me.DarkButton4.HoldColour = False
+        Me.DarkButton4.CustomColour = False
         Me.DarkButton4.Location = New System.Drawing.Point(8, 22)
         Me.DarkButton4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton4.Name = "DarkButton4"
@@ -475,7 +475,7 @@ Partial Class Form2
         '
         Me.DarkButton19.FlatBottom = False
         Me.DarkButton19.FlatTop = False
-        Me.DarkButton19.HoldColour = False
+        Me.DarkButton19.CustomColour = False
         Me.DarkButton19.Location = New System.Drawing.Point(108, 22)
         Me.DarkButton19.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton19.Name = "DarkButton19"
@@ -498,7 +498,7 @@ Partial Class Form2
         '
         Me.DarkButton9.FlatBottom = False
         Me.DarkButton9.FlatTop = False
-        Me.DarkButton9.HoldColour = False
+        Me.DarkButton9.CustomColour = False
         Me.DarkButton9.Location = New System.Drawing.Point(52, 22)
         Me.DarkButton9.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton9.Name = "DarkButton9"
@@ -522,7 +522,7 @@ Partial Class Form2
         '
         Me.DarkButton3.FlatBottom = False
         Me.DarkButton3.FlatTop = False
-        Me.DarkButton3.HoldColour = False
+        Me.DarkButton3.CustomColour = False
         Me.DarkButton3.Location = New System.Drawing.Point(8, 22)
         Me.DarkButton3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton3.Name = "DarkButton3"
@@ -551,7 +551,7 @@ Partial Class Form2
         '
         Me.DarkButton18.FlatBottom = False
         Me.DarkButton18.FlatTop = False
-        Me.DarkButton18.HoldColour = False
+        Me.DarkButton18.CustomColour = False
         Me.DarkButton18.Location = New System.Drawing.Point(108, 22)
         Me.DarkButton18.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton18.Name = "DarkButton18"
@@ -574,7 +574,7 @@ Partial Class Form2
         '
         Me.DarkButton8.FlatBottom = False
         Me.DarkButton8.FlatTop = False
-        Me.DarkButton8.HoldColour = False
+        Me.DarkButton8.CustomColour = False
         Me.DarkButton8.Location = New System.Drawing.Point(52, 22)
         Me.DarkButton8.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton8.Name = "DarkButton8"
@@ -598,7 +598,7 @@ Partial Class Form2
         '
         Me.DarkButton2.FlatBottom = False
         Me.DarkButton2.FlatTop = False
-        Me.DarkButton2.HoldColour = False
+        Me.DarkButton2.CustomColour = False
         Me.DarkButton2.Location = New System.Drawing.Point(8, 22)
         Me.DarkButton2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton2.Name = "DarkButton2"
@@ -627,7 +627,7 @@ Partial Class Form2
         '
         Me.DarkButton17.FlatBottom = False
         Me.DarkButton17.FlatTop = False
-        Me.DarkButton17.HoldColour = False
+        Me.DarkButton17.CustomColour = False
         Me.DarkButton17.Location = New System.Drawing.Point(109, 22)
         Me.DarkButton17.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton17.Name = "DarkButton17"
@@ -650,7 +650,7 @@ Partial Class Form2
         '
         Me.DarkButton7.FlatBottom = False
         Me.DarkButton7.FlatTop = False
-        Me.DarkButton7.HoldColour = False
+        Me.DarkButton7.CustomColour = False
         Me.DarkButton7.Location = New System.Drawing.Point(52, 22)
         Me.DarkButton7.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton7.Name = "DarkButton7"
@@ -674,7 +674,7 @@ Partial Class Form2
         '
         Me.DarkButton1.FlatBottom = False
         Me.DarkButton1.FlatTop = False
-        Me.DarkButton1.HoldColour = False
+        Me.DarkButton1.CustomColour = False
         Me.DarkButton1.Location = New System.Drawing.Point(8, 22)
         Me.DarkButton1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton1.Name = "DarkButton1"
@@ -687,7 +687,7 @@ Partial Class Form2
         '
         Me.DarkButton22.FlatBottom = False
         Me.DarkButton22.FlatTop = False
-        Me.DarkButton22.HoldColour = False
+        Me.DarkButton22.CustomColour = False
         Me.DarkButton22.Location = New System.Drawing.Point(170, 22)
         Me.DarkButton22.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.DarkButton22.Name = "DarkButton22"

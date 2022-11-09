@@ -31,12 +31,6 @@ Public Class Form2
     Private DBlank As Bitmap
     Private SBlank As Bitmap
     Private CBlank As Bitmap
-    Private PImg As Bitmap() = {New Bitmap(1, 1), New Bitmap(1, 1)}
-    Private OImg As Bitmap() = {New Bitmap(1, 1), New Bitmap(1, 1)}
-    Private DImg As Bitmap() = {New Bitmap(1, 1), New Bitmap(1, 1)}
-    Private SImg As Bitmap() = {New Bitmap(1, 1), New Bitmap(1, 1)}
-    Private CImg As Bitmap() = {New Bitmap(1, 1), New Bitmap(1, 1)}
-    Private test As String() = {"string index 0", "string index 1"}
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Background.SendToBack()
         Select Case game
@@ -134,17 +128,17 @@ Loaded:
             g.DrawImage(bmp, 0, 0, Background.Size.Width, Background.Size.Height)
             Dim tmp = New Bitmap(Background.Image).ToDirectBitmap
             PBlank = tmp.Crop(Play.Location.X - Background.Location.X, Play.Location.Y - Background.Location.Y, Play.Size).Bitmap
-            Play.Image.CopyFrom(PBlank) : PImg(0).CopyFrom(PBlank) : PImg(1).CopyFrom(PBlank)
+            Play.Image.CopyFrom(PBlank)
             OBlank = tmp.Crop(Options.Location.X - Background.Location.X, Options.Location.Y - Background.Location.Y, Options.Size).Bitmap
-            Options.Image.CopyFrom(OBlank) : OImg(0).CopyFrom(OBlank) : OImg(1).CopyFrom(OBlank)
+            Options.Image.CopyFrom(OBlank)
             If DataFiles.Visible Then
                 DBlank = tmp.Crop(DataFiles.Location.X - Background.Location.X, DataFiles.Location.Y - Background.Location.Y, DataFiles.Size).Bitmap
-                DataFiles.Image.CopyFrom(DBlank) : DImg(0).CopyFrom(DBlank) : DImg(1).CopyFrom(DBlank)
+                DataFiles.Image.CopyFrom(DBlank)
             End If
             SBlank = tmp.Crop(Support.Location.X - Background.Location.X, Support.Location.Y - Background.Location.Y, Support.Size).Bitmap
-            Support.Image.CopyFrom(SBlank) : SImg(0).CopyFrom(SBlank) : SImg(1).CopyFrom(SBlank)
+            Support.Image.CopyFrom(SBlank)
             CBlank = tmp.Crop(Close.Location.X - Background.Location.X, Close.Location.Y - Background.Location.Y, Close.Size).Bitmap
-            Close.Image.CopyFrom(CBlank) : SImg(0).CopyFrom(CBlank) : SImg(1).CopyFrom(CBlank)
+            Close.Image.CopyFrom(CBlank)
             Background.Refresh()
             DarkComboBox1.SelectedIndex = 0 : DarkComboBox2.SelectedIndex = 0 : DarkComboBox3.SelectedIndex = 0 : DarkComboBox4.SelectedIndex = 0 : DarkComboBox5.SelectedIndex = 0
             DarkGroupBox1.Enabled = True
@@ -153,64 +147,97 @@ Loaded:
     End Sub
 
     Private Sub SetFont(sender As Object, e As EventArgs) Handles DarkButton1.Click, DarkButton2.Click, DarkButton3.Click, DarkButton4.Click, DarkButton5.Click
-        Dim fd As New FontDialog
-        If fd.ShowDialog() = DialogResult.OK Then
-            If sender.Equals(DarkButton1) Then
+        If sender.Equals(DarkButton1) Then
+            Dim fd As New FontDialog With {.Font = PFont(l.i)}
+            If fd.ShowDialog() = DialogResult.OK Then
                 PFont(l.i) = fd.Font
-            ElseIf sender.Equals(DarkButton2) Then
+            End If
+        ElseIf sender.Equals(DarkButton2) Then
+            Dim fd As New FontDialog With {.Font = OFont(l.i)}
+            If fd.ShowDialog() = DialogResult.OK Then
                 OFont(l.i) = fd.Font
-            ElseIf sender.Equals(DarkButton3) Then
+            End If
+        ElseIf sender.Equals(DarkButton3) Then
+            Dim fd As New FontDialog With {.Font = DFont(l.i)}
+            If fd.ShowDialog() = DialogResult.OK Then
                 DFont(l.i) = fd.Font
-            ElseIf sender.Equals(DarkButton4) Then
+            End If
+        ElseIf sender.Equals(DarkButton4) Then
+            Dim fd As New FontDialog With {.Font = SFont(l.i)}
+            If fd.ShowDialog() = DialogResult.OK Then
                 SFont(l.i) = fd.Font
-            Else
+            End If
+        ElseIf sender.Equals(DarkButton5) Then
+            Dim fd As New FontDialog With {.Font = CFont(l.i)}
+            If fd.ShowDialog() = DialogResult.OK Then
                 CFont(l.i) = fd.Font
             End If
-            DrawAll()
         End If
+        DrawAll()
     End Sub
     Private Sub SetColour(sender As Object, e As EventArgs) Handles DarkButton7.Click, DarkButton8.Click, DarkButton9.Click, DarkButton10.Click, DarkButton11.Click
-        Dim cp = New ColorDialog
-        If cp.ShowDialog = DialogResult.OK Then
 
-            If sender.Equals(DarkButton7) Then
+        If sender.Equals(DarkButton7) Then
+            Dim cp = New ColorDialog With {.Color = PCol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 PCol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton8) Then
+            End If
+        ElseIf sender.Equals(DarkButton8) Then
+            Dim cp = New ColorDialog With {.Color = OCol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 OCol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton9) Then
+            End If
+        ElseIf sender.Equals(DarkButton9) Then
+            Dim cp = New ColorDialog With {.Color = DCol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 DCol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton10) Then
+            End If
+        ElseIf sender.Equals(DarkButton10) Then
+            Dim cp = New ColorDialog With {.Color = SCol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 SCol(l.i) = cp.Color
-            Else
+            End If
+        ElseIf sender.Equals(DarkButton11) Then
+            Dim cp = New ColorDialog With {.Color = CCol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 CCol(l.i) = cp.Color
             End If
-            DrawAll()
         End If
+        DrawAll()
     End Sub
     Private Sub SetEffCol(sender As Object, e As EventArgs) Handles DarkButton17.Click, DarkButton18.Click, DarkButton19.Click, DarkButton20.Click, DarkButton21.Click
-        Dim cp = New ColorDialog
-        If cp.ShowDialog = DialogResult.OK Then
-            If sender.Equals(DarkButton17) Then
+        If sender.Equals(DarkButton17) Then
+            Dim cp = New ColorDialog With {.Color = PECol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 PECol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton18) Then
+            End If
+        ElseIf sender.Equals(DarkButton18) Then
+            Dim cp = New ColorDialog With {.Color = OECol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 OECol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton19) Then
+            End If
+        ElseIf sender.Equals(DarkButton19) Then
+            Dim cp = New ColorDialog With {.Color = DECol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 DECol(l.i) = cp.Color
-            ElseIf sender.Equals(DarkButton20) Then
+            End If
+        ElseIf sender.Equals(DarkButton20) Then
+            Dim cp = New ColorDialog With {.Color = SECol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 SECol(l.i) = cp.Color
-            Else
+            End If
+        ElseIf sender.Equals(DarkButton21) Then
+            Dim cp = New ColorDialog With {.Color = CECol(l.i), .FullOpen = True, .AllowFullOpen = True, .AnyColor = True, .SolidColorOnly = True}
+            If cp.ShowDialog = DialogResult.OK Then
                 CECol(l.i) = cp.Color
             End If
-            DrawAll()
         End If
+        DrawAll()
     End Sub
 
-    Private Sub DrawButton(t As String, f As Font, c As Color, ec As Color, ByVal blank As Bitmap, ByRef hold As Bitmap, ByRef pb As PictureBox, ei As Integer, Optional savePath As String = "")
-        Dim tmp As New Bitmap(blank.Width, blank.Height)
-        Dim g = Graphics.FromImage(tmp)
-        g.DrawImage(blank, 0, 0, blank.Width, blank.Height)
-        pb.Image = tmp
-        g = Graphics.FromImage(pb.Image)
+    Private Sub DrawButton(t As String, f As Font, c As Color, ec As Color, ByVal blank As Bitmap, ByRef pb As PictureBox, ei As Integer, Optional savePath As String = "")
+        pb.Image.CopyFrom(blank)
+        Dim g = Graphics.FromImage(pb.Image)
         g.SmoothingMode = SmoothingMode.AntiAlias
         Dim s As SizeF = g.MeasureString(t, f)
         Dim p = New GraphicsPath
@@ -227,8 +254,7 @@ Loaded:
                 g.DrawImage(blur, 0, 0, blank.Width, blank.Height)
         End Select
         g.FillPath(New SolidBrush(c), p)
-        hold.CopyFrom(pb.Image)
-        If Not savePath = "" Then hold.Save(savePath)
+        If Not savePath = "" Then pb.Image.Save(savePath)
         pb.Refresh()
         g.Dispose()
     End Sub
@@ -268,11 +294,11 @@ Loaded:
 
     Private Sub DrawAll(Optional Save As Boolean = False)
         If DarkGroupBox1.Enabled Then
-            DrawButton(TextBox1.Text, PFont(l.i), PCol(l.i), PECol(l.i), PBlank, PImg(l.i), Play, PEff(l.i), If(Save, If(l, Form1.dir & "\PlayLit.bmp", Form1.dir & "\Play.bmp"), ""))
-            DrawButton(DarkTextBox1.Text, OFont(l.i), OCol(l.i), OECol(l.i), OBlank, OImg(l.i), Options, OEff(l.i), If(Save, If(l, Form1.dir & "\OptionsLit.bmp", Form1.dir & "\Options.bmp"), ""))
-            If DarkGroupBox4.Enabled Then DrawButton(DarkTextBox2.Text, DFont(l.i), DCol(l.i), DECol(l.i), DBlank, DImg(l.i), DataFiles, DEff(l.i), If(Save, If(l, Form1.dir & "\DataFilesLit.bmp", Form1.dir & "\DataFiles.bmp"), ""))
-            DrawButton(DarkTextBox3.Text, SFont(l.i), SCol(l.i), SECol(l.i), SBlank, SImg(l.i), Support, SEff(l.i), If(Save, If(l, Form1.dir & "\SupportLit.bmp", Form1.dir & "\Support.bmp"), ""))
-            DrawButton(DarkTextBox4.Text, CFont(l.i), CCol(l.i), CECol(l.i), CBlank, CImg(l.i), Close, CEff(l.i), If(Save, If(l, Form1.dir & "\ExitLit.bmp", Form1.dir & "\Exit.bmp"), ""))
+            DrawButton(TextBox1.Text, PFont(l.i), PCol(l.i), PECol(l.i), PBlank, Play, PEff(l.i), If(Save, If(l, Form1.dir & "\PlayLit.bmp", Form1.dir & "\Play.bmp"), ""))
+            DrawButton(DarkTextBox1.Text, OFont(l.i), OCol(l.i), OECol(l.i), OBlank, Options, OEff(l.i), If(Save, If(l, Form1.dir & "\OptionsLit.bmp", Form1.dir & "\Options.bmp"), ""))
+            If DarkGroupBox4.Enabled Then DrawButton(DarkTextBox2.Text, DFont(l.i), DCol(l.i), DECol(l.i), DBlank, DataFiles, DEff(l.i), If(Save, If(l, Form1.dir & "\DataFilesLit.bmp", Form1.dir & "\DataFiles.bmp"), ""))
+            DrawButton(DarkTextBox3.Text, SFont(l.i), SCol(l.i), SECol(l.i), SBlank, Support, SEff(l.i), If(Save, If(l, Form1.dir & "\SupportLit.bmp", Form1.dir & "\Support.bmp"), ""))
+            DrawButton(DarkTextBox4.Text, CFont(l.i), CCol(l.i), CECol(l.i), CBlank, Close, CEff(l.i), If(Save, If(l, Form1.dir & "\ExitLit.bmp", Form1.dir & "\Exit.bmp"), ""))
         End If
     End Sub
 

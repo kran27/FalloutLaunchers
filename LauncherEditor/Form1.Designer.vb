@@ -39,7 +39,7 @@ Partial Class Form1
         '
         Me.SelectLauncher.FlatBottom = False
         Me.SelectLauncher.FlatTop = False
-        Me.SelectLauncher.HoldColour = False
+        Me.SelectLauncher.CustomColour = False
         Me.SelectLauncher.Location = New System.Drawing.Point(14, 14)
         Me.SelectLauncher.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.SelectLauncher.Name = "SelectLauncher"
@@ -90,7 +90,7 @@ Partial Class Form1
         '
         Me.Button4.FlatBottom = False
         Me.Button4.FlatTop = False
-        Me.Button4.HoldColour = False
+        Me.Button4.CustomColour = False
         Me.Button4.Location = New System.Drawing.Point(7, 122)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button4.Name = "Button4"
@@ -103,7 +103,7 @@ Partial Class Form1
         '
         Me.Button3.FlatBottom = False
         Me.Button3.FlatTop = False
-        Me.Button3.HoldColour = False
+        Me.Button3.CustomColour = False
         Me.Button3.Location = New System.Drawing.Point(7, 89)
         Me.Button3.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button3.Name = "Button3"
@@ -117,7 +117,7 @@ Partial Class Form1
         '
         Me.Button2.FlatBottom = False
         Me.Button2.FlatTop = False
-        Me.Button2.HoldColour = False
+        Me.Button2.CustomColour = False
         Me.Button2.Location = New System.Drawing.Point(7, 55)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button2.Name = "Button2"
@@ -131,7 +131,7 @@ Partial Class Form1
         '
         Me.Button1.FlatBottom = False
         Me.Button1.FlatTop = False
-        Me.Button1.HoldColour = False
+        Me.Button1.CustomColour = False
         Me.Button1.Location = New System.Drawing.Point(7, 22)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Button1.Name = "Button1"

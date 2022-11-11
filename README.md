@@ -6,6 +6,7 @@
 - Remakes are functionally identical, but visually improved, with minor new functions
 - Fallout Van Buren lacks an official launcher, and has [this launcher](https://github.com/kran27/VanBurenLauncher)
 ## Modern Games
+- Fallout 3, New Vegas, and 4's launchers have [been modified to launch their respective Script Extenders](https://github.com/kran27/FalloutLaunchers/tree/main/Script%20Extender%20Launchers)
 - Fallout 3, New Vegas [(GOG Version)](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutNVLauncher), and 4 [can be modified](https://github.com/kran27/FalloutLaunchers/tree/main/LauncherEditor)
 - Skyrim and Skyrim SE are also supported, Morrowind and Oblivion's launchers are too different to add to the editor.
 - Fallout 3 and 4 both use [Futura](https://www.myfonts.com/collections/futura-nv-font-linotype) and New Vegas uses [Gothic 821](https://www.myfonts.com/collections/gothic-821-font-bitstream)

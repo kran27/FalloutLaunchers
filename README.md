@@ -1,5 +1,6 @@
 # Fallout Launchers
 #### For the included FalloutNVLauncher.exe (script extender & unmodified), you need either GalaxyWrp.dll & Galaxy.dll from the GOG release, or steam_api.dll, renamed to GalaxyWrp.dll
+#### For Fallout 4 on GOG, the editor supports the included launcher, and the script extender version works with no modifications needed.
 ## Classic Games
 - Fallout [1](https://github.com/kran27/FalloutLaunchers/tree/main/FalloutLauncher), [2](https://github.com/kran27/FalloutLaunchers/tree/main/Fallout2Launcher), and [Tactics](https://github.com/kran27/FalloutLaunchers/tree/main/TacticsLauncher) launchers have been ~~decompiled~~ re-made from scratch
 - Remakes are functionally identical, but visually improved, with minor new functions
